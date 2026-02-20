@@ -1,27 +1,22 @@
-name: Deploy Trucks Mate to cPanel
+name: Deploy to Server
 
 on:
   push:
     branches:
-      - main
+      - main  # Agar aapki main branch ka naam 'master' hai to yahan change karein
 
 jobs:
-  deploy:
-    name: 🚀 FTP Deploy
+  web-deploy:
+    name: 🎉 Deploy
     runs-on: ubuntu-latest
-
     steps:
-      - name: 📥 Checkout Repository
-        uses: actions/checkout@v4
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v3
 
-      - name: 📂 Upload via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: ${{ secrets.FTP_SERVER }}
+          server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftps
-          port: 21
-          local-dir: ./
-          server-dir: public_html/Sub-domains/Trucks-Mate/
-          dangerous-clean-slate: false
+          server-dir: Sub-domains/Trucks-Mate/

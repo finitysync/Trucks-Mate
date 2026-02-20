@@ -1,4 +1,4 @@
-name: Deploy via SSH
+name: Deploy Trucks Mate to cPanel
 
 on:
   push:
@@ -7,16 +7,21 @@ on:
 
 jobs:
   deploy:
+    name: 🚀 FTP Deploy
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Code
+      - name: 📥 Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Deploy to cPanel
-        uses: easingthemes/ssh-deploy@v4.1.10
+      - name: 📂 Upload via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          REMOTE_HOST: finitysync.com
-          REMOTE_USER: finitysync
-          TARGET: /home/finitysync/public_html/Sub-domains/Trucks-Mate/
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./
+          server-dir: public_html/Sub-domains/Trucks-Mate/
+          dangerous-clean-slate: false

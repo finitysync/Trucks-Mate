@@ -23,7 +23,7 @@ jobs:
           protocol: ftps
           port: 21
           local-dir: ./
-          server-dir: public_html/Sub-domains/Trucks-Mate/
+          server-dir: Sub-domains/Trucks-Mate/
           security: loose
           exclude: |
             **/.git*

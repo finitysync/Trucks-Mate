@@ -7,8 +7,9 @@ on:
 
 # -------------------------------------------------------
 # GitHub Secrets required (Settings → Secrets → Actions):
-#   FTP_SERVER   → Your Hostinger FTP host
-#                  e.g. ftp.yourdomain.com  or  files.000webhost.com
+#   FTP_SERVER   → 157.173.209.130   (just the IP, no ftp:// prefix!)
+#   FTP_USERNAME → u673877591
+#   FTP_PASSWORD → the password you set in hPanel → FTP Accounts
 #   FTP_USERNAME → FTP username shown in hPanel → Hosting → FTP Accounts
 #   FTP_PASSWORD → FTP password you set in hPanel
 # -------------------------------------------------------
@@ -31,13 +32,10 @@ jobs:
           protocol: ftps
           port: 21
           local-dir: ./
-          # Hostinger hPanel path:
-          #   Main domain  → public_html/
-          #   Subdomain    → public_html/trucks-mate/   (if subdomain points here)
-          #   OR if Hostinger created a separate folder:
-          #                → domains/trucks-mate.yourdomain.com/public_html/
-          server-dir: public_html/
-          security: strict
+          # Hostinger FTP root is: /home/u673877591/
+          # Full path to public_html: domains/fairforestllc.com/public_html/
+          server-dir: domains/fairforestllc.com/public_html/
+          security: loose
           exclude: |
             **/.git*
             **/.git*/**

@@ -34,7 +34,7 @@ jobs:
           local-dir: ./
           # Hostinger FTP root is: /home/u673877591/
           # Full path to public_html: domains/fairforestllc.com/public_html/
-          server-dir: domains/fairforestllc.com/public_html/
+          server-dir: public_html/
           security: loose
           exclude: |
             **/.git*

@@ -32,9 +32,9 @@ jobs:
           protocol: ftps
           port: 21
           local-dir: ./
-          # Hostinger FTP root is: /home/u673877591/
-          # Full path to public_html: domains/fairforestllc.com/public_html/
-          server-dir: public_html/
+          # Hostinger FTP root is already inside public_html/
+          # Using ./ deploys directly to FTP root (no nested folder created)
+          server-dir: ./
           security: loose
           exclude: |
             **/.git*

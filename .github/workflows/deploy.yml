@@ -1,20 +1,28 @@
-name: Deploy to Server
+name: Deploy to Hostinger (hPanel)
 
 on:
   push:
     branches:
       - main
 
+# -------------------------------------------------------
+# GitHub Secrets required (Settings → Secrets → Actions):
+#   FTP_SERVER   → Your Hostinger FTP host
+#                  e.g. ftp.yourdomain.com  or  files.000webhost.com
+#   FTP_USERNAME → FTP username shown in hPanel → Hosting → FTP Accounts
+#   FTP_PASSWORD → FTP password you set in hPanel
+# -------------------------------------------------------
+
 jobs:
   web-deploy:
-    name: 🎉 Deploy
+    name: 🚀 Deploy to Hostinger hPanel
     runs-on: ubuntu-latest
 
     steps:
-      - name: 🚚 Get latest code
+      - name: 🚚 Checkout latest code
         uses: actions/checkout@v4
 
-      - name: 📂 Sync files via FTP
+      - name: 📂 Sync files via FTPS
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
@@ -23,11 +31,19 @@ jobs:
           protocol: ftps
           port: 21
           local-dir: ./
-          server-dir: Sub-domains/Trucks-Mate/
-          security: loose
+          # Hostinger hPanel path:
+          #   Main domain  → public_html/
+          #   Subdomain    → public_html/trucks-mate/   (if subdomain points here)
+          #   OR if Hostinger created a separate folder:
+          #                → domains/trucks-mate.yourdomain.com/public_html/
+          server-dir: public_html/
+          security: strict
           exclude: |
             **/.git*
             **/.git*/**
             **/node_modules/**
-            .github/**
-            README.md
+            **/.github/**
+            **/README.md
+            **/.env*
+            **/yarn.lock
+            **/package-lock.json

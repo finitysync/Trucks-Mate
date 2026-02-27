@@ -4,73 +4,74 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-
 <url>
-  <loc>https://trucksmate.com/</loc>
-  <lastmod>2023-03-27T16:58:32+00:00</lastmod>
+  <loc>https://fairforestllc.com/</loc>
+  <lastmod>2026-02-28T04:17:48+05:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://trucksmate.com/index.html</loc>
-  <lastmod>2023-03-27T16:58:32+00:00</lastmod>
+  <loc>https://fairforestllc.com/about-us.html</loc>
+  <lastmod>2026-02-28T04:17:48+05:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://trucksmate.com/truck-dispatch-services.html</loc>
-  <lastmod>2023-03-27T16:58:32+00:00</lastmod>
+  <loc>https://fairforestllc.com/carrier-setup-signup.html</loc>
+  <lastmod>2026-02-28T04:17:48+05:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://trucksmate.com/truck-loads-broker-solutions.html</loc>
-  <lastmod>2023-03-27T16:58:32+00:00</lastmod>
+  <loc>https://fairforestllc.com/contact-us.html</loc>
+  <lastmod>2026-02-28T04:17:48+05:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://trucksmate.com/carrier-setup-signup.html</loc>
-  <lastmod>2023-03-27T16:58:32+00:00</lastmod>
+  <loc>https://fairforestllc.com/faq.html</loc>
+  <lastmod>2026-02-28T04:17:48+05:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://trucksmate.com/about-us.html</loc>
-  <lastmod>2023-03-27T16:58:32+00:00</lastmod>
+  <loc>https://fairforestllc.com/find-truck-loads-online.html</loc>
+  <lastmod>2026-02-28T04:17:48+05:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://trucksmate.com/contact-us.html</loc>
-  <lastmod>2023-03-27T16:58:32+00:00</lastmod>
+  <loc>https://fairforestllc.com/find-truck-loads.html</loc>
+  <lastmod>2026-02-28T04:17:48+05:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://trucksmate.com/find-truckers.html</loc>
-  <lastmod>2023-03-27T16:58:32+00:00</lastmod>
+  <loc>https://fairforestllc.com/find-truckers-online.html</loc>
+  <lastmod>2026-02-28T04:17:48+05:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://trucksmate.com/find-truck-loads-online.html</loc>
-  <lastmod>2023-03-27T16:58:32+00:00</lastmod>
+  <loc>https://fairforestllc.com/find-truckers.html</loc>
+  <lastmod>2026-02-28T04:17:48+05:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://trucksmate.com/find-truck-loads.html</loc>
-  <lastmod>2023-03-27T16:58:32+00:00</lastmod>
+  <loc>https://fairforestllc.com/privacy-policy.html</loc>
+  <lastmod>2026-02-28T04:17:48+05:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://trucksmate.com/faq.html</loc>
-  <lastmod>2023-03-27T16:58:32+00:00</lastmod>
+  <loc>https://fairforestllc.com/terms-and-conditions.html</loc>
+  <lastmod>2026-02-28T04:17:48+05:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://trucksmate.com/privacy-policy.html</loc>
-  <lastmod>2023-03-27T16:58:32+00:00</lastmod>
+  <loc>https://fairforestllc.com/thank-you.html</loc>
+  <lastmod>2026-02-28T04:17:48+05:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://trucksmate.com/find-truckers-online.html</loc>
-  <lastmod>2023-03-27T16:58:32+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>https://fairforestllc.com/truck-dispatch-services.html</loc>
+  <lastmod>2026-02-28T04:17:48+05:00</lastmod>
+  <priority>0.80</priority>
 </url>
-
-
+<url>
+  <loc>https://fairforestllc.com/truck-loads-broker-solutions.html</loc>
+  <lastmod>2026-02-28T04:17:48+05:00</lastmod>
+  <priority>0.80</priority>
+</url>
 </urlset>
